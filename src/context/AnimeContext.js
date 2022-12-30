@@ -1,16 +1,28 @@
 import { createContext, useEffect, useState } from "react";
 import { AnimeData } from "../services/animeApi";
 
-export function AnimeProvider({ children }) {
+const AnimeContext = createContext(null);
+
+function AnimeProvider({ children }) {
   const [anime, setAnime] = useState();
-  const AnimeContext = createContext(null);
+
   useEffect(() => {
-    const data = AnimeData().then((res) => {
+    AnimeData().then((res) => {
       setAnime(res);
     });
   }, []);
 
+  function buttonHandler() {
+    AnimeData().then((res) => {
+      setAnime(res);
+    });
+  }
+
   return (
-    <AnimeContext.Provider value={anime}>{children}</AnimeContext.Provider>
+    <AnimeContext.Provider value={{ anime, buttonHandler }}>
+      {children}
+    </AnimeContext.Provider>
   );
 }
+
+export { AnimeContext, AnimeProvider };
