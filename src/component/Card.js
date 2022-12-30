@@ -1,6 +1,6 @@
 import { MdMovieFilter } from "react-icons/md";
-import { GiCharacter } from "react-icons/gi";
-import { BsChatRightQuoteFill } from "react-icons/bs";
+import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteRight, FaRegUser } from "react-icons/fa";
 import "./Card.css";
 
 function Card({ animeDetails }) {
@@ -10,14 +10,19 @@ function Card({ animeDetails }) {
   // const quote = animeDetails.quote;
   return (
     <div className="container">
-      <MdMovieFilter />
-      {anime}
-      <br />
-      <GiCharacter />
-      {character}
-      <br />
-      <BsChatRightQuoteFill />
-      {quote}
+      <h2>
+        <MdMovieFilter />
+        {"  " + anime}
+      </h2>
+      <h4>
+        <FaRegUser />
+        {"   " + character}
+      </h4>
+      <p>
+        <FaQuoteLeft />
+        {"    " + quote + "    "}
+        <FaQuoteRight />
+      </p>
     </div>
   );
 }

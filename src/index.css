@@ -1,0 +1,8 @@
+button {
+  margin: 0 80%;
+  background-color: rgb(240, 238, 205);
+  border-color: rgb(225, 10, 10);
+  color: rgb(225, 10, 10);
+  padding: 7px 20px;
+  border-radius: 10%;
+}

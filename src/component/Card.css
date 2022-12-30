@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rancho&display=swap");
+
+.container {
+  text-align: center;
+  font-family: "Rancho", cursive;
+  font-size: 25px;
+  padding: 10px 30px;
+  background-color: rgba(228, 208, 90, 0.493);
+  margin: 15px 100px;
+  color: rgb(229, 52, 8);
+  border-radius: 1%;
+}
