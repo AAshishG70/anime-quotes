@@ -9,7 +9,8 @@ button {
 
 button:hover {
   animation-name: rotate;
-  animation-duration: 0.7s;
+  animation-duration: 0.9s;
+  cursor: pointer;
 }
 
 @keyframes rotate {
