@@ -7,7 +7,7 @@ import { GrLinkNext } from "react-icons/gr";
 function App() {
   const { anime, buttonHandler } = useContext(AnimeContext);
   return (
-    <>
+    <body>
       {(anime && (
         <div>
           <Card animeDetails={anime} />
@@ -16,7 +16,7 @@ function App() {
           </button>
         </div>
       )) || <div>Loading..</div>}
-    </>
+    </body>
   );
 }
 
