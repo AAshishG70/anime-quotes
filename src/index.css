@@ -4,10 +4,7 @@
 }
 
 body {
-  background: linear-gradient(
-      rgba(214, 229, 234, 0.931),
-      rgba(245, 218, 218, 0.93)
-    ),
+  background: linear-gradient(rgba(90, 93, 94, 0.815), rgba(100, 96, 96, 0.798)),
     url("https://r4.wallpaperflare.com/wallpaper/518/375/797/manga-anime-mix-up-hd-wallpaper-e0b0a81e0cb7a6be26671a989b20ce1e.jpg");
   background-size: cover;
 }
@@ -20,7 +17,7 @@ button {
     url("https://r4.wallpaperflare.com/wallpaper/518/375/797/manga-anime-mix-up-hd-wallpaper-e0b0a81e0cb7a6be26671a989b20ce1e.jpg");
   background-size: cover;
   margin: 0% 82%;
-  border-color: rgb(225, 10, 10);
+  border-color: rgba(29, 1, 1, 0.752);
   padding: 0.8% 1.8%;
   border-radius: 10%;
 }
